@@ -42,7 +42,7 @@
     "url": "git+https://github.com/mrbatista/loopback-component-paypal.git"
   },
   "scripts": {
-    "prepublish": "gulp prepublish",
+    "prepublishOnly": "gulp prepublish",
     "test": "gulp"
   },
   "license": "MIT",
