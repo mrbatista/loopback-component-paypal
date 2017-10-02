@@ -1,7 +1,6 @@
 import del from 'del';
 import path from 'path';
 import * as isparta from 'isparta';
-import babel from 'babel-core';
 import gulp from 'gulp';
 import plugins from 'gulp-load-plugins';
 const $ = plugins();
@@ -51,7 +50,7 @@ gulp.task('clean', () => {
 
 gulp.task('babel', gulp.series(['clean'], () => {
   return gulp.src('lib/**/*.js')
-    .pipe(babel())
+    .pipe($.babel())
     .pipe(gulp.dest('dist'));
 }));
 
