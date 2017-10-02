@@ -9,10 +9,10 @@ $ npm install --save loopback-component-paypal
 ```
 
 ## Usage
-Add configuration in file component-config.json
+Define new datasourc configuration for your PayPal account (file datasources.json)
 ```js
 {
-  "loopback-component-paypal": {
+  "paypal": {
     "clientID": "CLIENT_ID",
     "clientSecret": "CLIENT_SECRET",
     "mode": "sandbox",
@@ -28,8 +28,22 @@ Add configuration in file component-config.json
     }
   }
 }
+```
 
-var PayPal = app.models.PayPal;
+Define new model in file model-config.json with datasource `paypal`
+
+```js
+{
+    "PayPal": {
+      "dataSource": "paypal",
+      "public": false
+    }
+}
+```
+
+use model `PayPal` in your application: 
+
+```js
 PayPal.payment.create(create_payment_json, function (error, payment) {
     if (error) {
         console.log(error.response);
@@ -40,6 +54,7 @@ PayPal.payment.create(create_payment_json, function (error, payment) {
     }
 });
 ```
+
 ## License
 
 MIT © [Matteo Padovano](https://github.com/mrbatista)

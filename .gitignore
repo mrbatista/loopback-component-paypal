@@ -1,3 +1,4 @@
+/.loopbackrc
 node_modules
 coverage
 dist
