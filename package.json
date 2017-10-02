@@ -1,6 +1,6 @@
 {
   "name": "loopback-component-paypal",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Loopback PayPal Component",
   "homepage": "https://github.com/mrbatista/loopback-component-paypal",
   "author": "Matteo Padovano <mrba7ista@gmail.com> (https://github.com/mrbatista)",
