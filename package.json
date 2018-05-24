@@ -31,7 +31,7 @@
     "gulp-eslint": "^4.0.0",
     "gulp-istanbul": "^1.1.1",
     "gulp-load-plugins": "^1.4.0",
-    "gulp-mocha": "^3.0.0",
+    "gulp-mocha": "^6.0.0",
     "gulp-nsp": "^2.4.2",
     "isparta": "^4.0.0",
     "loopback-datasource-juggler": "^3.12.0",
