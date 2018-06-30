@@ -13,14 +13,15 @@
     "paypal"
   ],
   "dependencies": {
-    "paypal-rest-sdk": "^1.6.8"
+    "paypal-rest-sdk": "^1.6.8",
+    "snyk": "^1.88.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-eslint": "^4.1.8",
     "babel-preset-env": "^1.6.0",
     "chai": "^3.5.0",
-    "coveralls": "^2.11.1",
+    "coveralls": "^3.0.0",
     "del": "^2.0.2",
     "dirty-chai": "^1.2.2",
     "eslint": "^4.7.2",
@@ -44,10 +45,13 @@
   },
   "scripts": {
     "prepublishOnly": "gulp prepublish",
-    "test": "gulp"
+    "test": "gulp",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/mrbatista/loopback-component-paypal/issues"
-  }
+  },
+  "snyk": true
 }
